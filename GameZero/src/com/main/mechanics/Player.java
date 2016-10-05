@@ -2,6 +2,7 @@ package com.main.mechanics;
 
 public class Player implements Entity
 {
+	//Testing - Evan Meade
 	public int health;
 	public int speed;
 	public int damage;
