@@ -4,6 +4,7 @@ import com.main.controls.Input;
 
 public class Player extends Entity
 {
+	//Testing - Evan Meade
 	public int health;
 	public int speed;
 	public int damage;
