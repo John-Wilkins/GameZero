@@ -1,6 +1,11 @@
 package com.main.mechanics;
 
-public class Weapon implements Entity
+public class Weapon extends Entity
 {
 
+	public Weapon(Location loc)
+	{
+		super(loc);
+	}
+	
 }

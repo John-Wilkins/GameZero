@@ -1,6 +1,11 @@
 package com.main.mechanics;
 
-public class Projectile implements Entity
+public class Projectile extends Entity
 {
+
+	public Projectile(Location loc)
+	{
+		super(loc);
+	}
 	
 }
