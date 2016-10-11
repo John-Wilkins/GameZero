@@ -11,9 +11,9 @@ public class Player extends Entity
 	public int rangedDamage;
 	public boolean isHuman;
 	
-	public Player (int health, int speed, int damage, int rangedDamage, boolean isHuman, Location loc)
+	public Player (int health, int speed, int damage, int rangedDamage, boolean isHuman, Location loc, Vector vec)
 	{
-		super(loc);
+		super(loc, vec);
 		this.health = health;
 		this.speed = speed;
 		this.damage = damage;
