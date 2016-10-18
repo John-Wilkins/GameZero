@@ -1,5 +1,7 @@
 package com.main.mechanics;
 
+import java.awt.image.BufferedImage;
+
 import com.main.controls.Input;
 
 public class Player extends Entity
@@ -11,9 +13,9 @@ public class Player extends Entity
 	public int rangedDamage;
 	public boolean isHuman;
 	
-	public Player (int health, int speed, int damage, int rangedDamage, boolean isHuman, Location loc, Vector vec)
+	public Player (int health, int speed, int damage, int rangedDamage, boolean isHuman, Location loc, Vector vec, BufferedImage image)
 	{
-		super(loc, vec);
+		super(loc, vec, image);
 		this.health = health;
 		this.speed = speed;
 		this.damage = damage;
