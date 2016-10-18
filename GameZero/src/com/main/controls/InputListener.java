@@ -23,6 +23,7 @@ public class InputListener implements KeyListener, MouseListener, MouseMotionLis
 	public void keyTyped(KeyEvent event)
 	{
 		System.out.println("Key Typed");
+		System.out.println(event.getKeyChar());
 	}
 	
 	public void mouseClicked(MouseEvent event)
@@ -50,17 +51,18 @@ public class InputListener implements KeyListener, MouseListener, MouseMotionLis
 		System.out.println("Mouse Released");
 	}
 
-	public void mouseDragged(MouseEvent arg0)
+	public void mouseDragged(MouseEvent event)
 	{
 		System.out.println("Mouse Dragged");
 	}
 
-	public void mouseMoved(MouseEvent arg0)
+	public void mouseMoved(MouseEvent event)
 	{
 		System.out.println("Mouse Moved");
+		System.out.println(event.getX() + ", " + event.getY());
 	}
 
-	public void mouseWheelMoved(MouseWheelEvent arg0)
+	public void mouseWheelMoved(MouseWheelEvent event)
 	{
 		System.out.println("Mouse Wheel Moved");
 	}

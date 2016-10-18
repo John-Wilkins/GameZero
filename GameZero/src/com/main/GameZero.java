@@ -1,6 +1,11 @@
 package com.main;
 
+import java.awt.BorderLayout;
+import java.awt.Canvas;
+
 import javax.swing.JFrame;
+
+import com.main.controls.InputListener;
 
 public class GameZero
 {
@@ -17,6 +22,15 @@ public class GameZero
 		startMenu.setResizable(false);
 		startMenu.setLocationRelativeTo(null);
 		startMenu.setUndecorated(true);
+		startMenu.setFocusable(true);
+		Canvas canvas = new Canvas();
+		canvas.setFocusable(true);
+		InputListener listener = new InputListener();
+		canvas.addKeyListener(listener);
+		canvas.addMouseListener(listener);
+		canvas.addMouseMotionListener(listener);
+		canvas.addMouseWheelListener(listener);
+		startMenu.add(canvas, BorderLayout.CENTER);
 		startMenu.setVisible(true);
 	}
 }
