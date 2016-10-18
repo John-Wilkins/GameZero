@@ -1,7 +1,5 @@
 package com.main;
 
-import java.awt.Window;
-
 import javax.swing.JFrame;
 
 public class GameZero
