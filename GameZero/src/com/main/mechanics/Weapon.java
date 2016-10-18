@@ -3,9 +3,9 @@ package com.main.mechanics;
 public class Weapon extends Entity
 {
 
-	public Weapon(Location loc)
+	public Weapon(Location loc, Vector vec)
 	{
-		super(loc);
+		super(loc, vec);
 	}
 	
 }
