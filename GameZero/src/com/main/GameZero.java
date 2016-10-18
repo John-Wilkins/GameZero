@@ -10,7 +10,7 @@ public class GameZero
 
 	public static void main(String[] args)
 	{
-		//Setting up Start Menu
+		//Set up Start Menu
 		JFrame startMenu = new JFrame();
 		startMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		startMenu.setSize(600, 400);
